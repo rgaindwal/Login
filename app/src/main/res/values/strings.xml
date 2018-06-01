@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="user">Email</string>
+    <string name="pass">Password</string>
+    <string name="signin">Sign In</string>
+    <string name="or">New User?</string>
+    <string name="signup">Sign Up</string>
+    <string name="orold">Login</string>
+    <string name="old">Already a User?</string>
+    <string name="confirmpass">Confirm Password</string>
+    <string name="phone">Phone</string>
+    <string name="success">User Registered Successfully</string>
+    <string name="failed">Registration Failed</string>
+    <string name="already">User already Exists</string>
+    <string name="failedsignin">Sign In Failed</string>
+    <string name="welcome">Welcome</string>
+    <string name="logout">Logout</string>
+    <string name="exists">Phone Number already Exists</string>
+</resources>
