@@ -180,13 +180,15 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
         databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if(dataSnapshot.getValue() != null){
+                if(dataSnapshot.getValue() != null && dataSnapshot.getValue() == phone){
                     Snackbar.make(contextView, R.string.exists, Snackbar.LENGTH_SHORT)
                             .show();
                     progressBar.setVisibility(View.INVISIBLE);
                 }
                 else{
-                    startRegistration(email, password,phone);
+                    if(dataSnapshot.getValue() != null) {
+                        startRegistration(email, password, phone);
+                    }
                 }
             }
 
